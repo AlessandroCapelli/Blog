@@ -2,6 +2,8 @@
 
 Blog statico, zero JavaScript, zero temi esterni. Markdown puro, dark mode automatica, feed RSS su `/feed.xml`.
 
+**Live:** https://alessandrocapelli.github.io/Blog/
+
 ## Struttura
 
 ```
@@ -18,21 +20,11 @@ index.html
 
 ## Deploy su GitHub Pages
 
-1. Crea un repo su GitHub. Due opzioni:
-    - `TUOUSERNAME.github.io` → blog su `https://TUOUSERNAME.github.io`
-    - qualsiasi altro nome (es. `blog`) → blog su `https://TUOUSERNAME.github.io/blog`
-2. In `_config.yml` imposta `url` e `baseurl`:
-    - repo `TUOUSERNAME.github.io`: `url: https://TUOUSERNAME.github.io`, `baseurl: ""`
-    - repo `blog`: `url: https://TUOUSERNAME.github.io`, `baseurl: /blog`
-3. Push di tutti i file sul branch `main`:
-    ```bash
-    git init && git add . && git commit -m "primo post"
-    git branch -M main
-    git remote add origin git@github.com:TUOUSERNAME/NOME-REPO.git
-    git push -u origin main
-    ```
-4. Su GitHub: **Settings → Pages → Source: Deploy from a branch → main / (root)**.
-5. GitHub compila Jekyll da solo, nessuna build locale necessaria.
+Il repo è già configurato (`_config.yml`): `url: https://alessandrocapelli.github.io`, `baseurl: Blog`.
+
+1. Push sul branch `main`.
+2. Su GitHub: **Settings → Pages → Source: Deploy from a branch → main / (root)**.
+3. GitHub compila Jekyll da solo, nessuna build locale necessaria.
 
 ## Scrivere un nuovo post
 

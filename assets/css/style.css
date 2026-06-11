@@ -84,12 +84,12 @@ a:focus-visible {
 .site-title {
 	font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
 	font-weight: 700;
-	font-size: 1.12rem;
-	letter-spacing: -0.01em;
+	font-size: 1.7rem;
+	letter-spacing: -0.02em;
 	color: var(--ink);
 	display: inline-flex;
 	align-items: center;
-	gap: 0.6rem;
+	gap: 1.3rem;
 }
 
 .site-title:hover {
@@ -98,8 +98,8 @@ a:focus-visible {
 }
 
 .site-title .dots {
-	width: 44px;
-	height: 18px;
+	width: 58px;
+	height: 24px;
 }
 
 .site-title .dots circle {
@@ -413,12 +413,26 @@ hr {
 	}
 
 	50% {
-		transform: translateY(-3.5px);
+		transform: translateY(-6px);
+	}
+}
+
+@keyframes pulse-dot {
+
+	0%,
+	100% {
+		transform: translateY(0) scale(1);
+	}
+
+	50% {
+		transform: translateY(-6px) scale(1.35);
 	}
 }
 
 .site-title .dots circle {
-	animation: float-dot 2.8s ease-in-out infinite;
+	transform-box: fill-box;
+	transform-origin: center;
+	animation: float-dot 2.4s ease-in-out infinite;
 }
 
 .site-title .dots circle:nth-child(1) {
@@ -434,6 +448,7 @@ hr {
 }
 
 .site-title .dots circle:nth-child(4) {
+	animation-name: pulse-dot;
 	animation-delay: 1.05s;
 	animation-duration: 2.2s;
 }
