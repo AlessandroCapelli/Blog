@@ -1,0 +1,21 @@
+title: Blog
+description: Blog di Alessandro Capelli.
+author: Alessandro Capelli
+lang: it
+
+url: "https://alessandrocapelli.github.io"
+baseurl: "Blog"
+
+markdown: kramdown
+permalink: /:year/:title/
+
+plugins:
+    - jekyll-feed
+
+feed:
+    path: feed.xml
+
+exclude:
+    - README.md
+    - Gemfile
+    - Gemfile.lock
