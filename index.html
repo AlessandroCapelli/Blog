@@ -3,11 +3,11 @@ layout: default
 ---
 {% assign by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 <section class="archive">
-	{% for year in by_year reversed %}
+	{% for year in by_year %}
 	<div class="year-block">
 		<h2 class="year">{{ year.name }}</h2>
 		<ul class="archive-list">
-			{% for post in year.items reversed %}
+			{% for post in year.items %}
 			<li style="--i: {{ forloop.index }}">
 				<a href="{{ post.url | relative_url }}">
 					<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d.%m" }}</time>
