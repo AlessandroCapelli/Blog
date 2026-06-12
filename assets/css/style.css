@@ -184,8 +184,8 @@ body:has(.archive)>main.wrap {
 	display: grid;
 	grid-template-columns: 8rem 1fr auto;
 	align-items: center;
-	gap: 2.8rem;
-	padding: 3.2rem 3.4rem;
+	gap: 2.4rem;
+	padding: 2rem 2.6rem;
 	color: var(--ink);
 	background: var(--panel);
 	border: 1px solid var(--rule);
@@ -210,9 +210,9 @@ body:has(.archive)>main.wrap {
 .archive-list .t {
 	font-family: "Space Grotesk", system-ui, sans-serif;
 	font-weight: 500;
-	font-size: 2.7rem;
+	font-size: 2rem;
 	letter-spacing: -0.02em;
-	line-height: 1.18;
+	line-height: 1.2;
 }
 
 .archive-list a:hover .t {
