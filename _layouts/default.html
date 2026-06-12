@@ -6,6 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
 	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+	<link rel="canonical" href="{{ page.url | absolute_url }}">
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4f6f9">
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0e15">
+
+	<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta property="og:description"
+		content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:locale" content="it_IT">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+	<meta name="twitter:description"
+		content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -21,10 +37,10 @@
 		<div class="wrap">
 			<a class="site-title" href="{{ '/' | relative_url }}">
 				<svg class="dots" viewBox="0 0 44 18" aria-hidden="true">
-					<circle cx="5" cy="13" r="2.6" />
-					<circle cx="18" cy="6" r="2.6" />
-					<circle cx="31" cy="14" r="2.6" />
-					<circle cx="40" cy="4" r="2.8" class="dot-hot" />
+					<circle cx="6" cy="9" r="2.6" />
+					<circle cx="17" cy="9" r="2.6" />
+					<circle cx="28" cy="9" r="2.6" />
+					<circle cx="39" cy="9" r="2.8" class="dot-hot" />
 				</svg>
 				{{ site.title }}
 			</a>

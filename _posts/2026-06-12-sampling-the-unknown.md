@@ -26,7 +26,7 @@ Scenario ottimista e probabilmente irrealistico: U è storicamente minuscolo ris
 
 ## Ipotesi 3: M non è contenuto in S
 
-Lo scenario realista: una parte di M sta fuori dalle soluzioni valide (sono le allucinazioni), e allo stesso tempo restano zone di S che il modello non raggiunge. L'intersezione dipende dal costo: serve un verificatore che filtri i campioni, che sia un compilatore, un esperimento o una dimostrazione. I benchmark tendono a saturare proprio nei campi dove verificare costa poco, tipo codice e matematica, dove un test o un proof assistant danno un verdetto in millisecondi. Dove invece il verificatore è un esperimento di laboratorio o una dimostrazione che richiede anni, l'intersezione esiste lo stesso, ma campionarla in modo utile diventa lentissimo.
+Lo scenario realista: una parte di M sta fuori dalle soluzioni valide (sono le allucinazioni), e allo stesso tempo restano zone di S che il modello non raggiunge. L'intersezione resta, cambia solo il costo: serve un verificatore che filtri i campioni, che sia un compilatore, un esperimento o una dimostrazione. I benchmark tendono a saturare proprio nei campi dove verificare costa poco, tipo codice e matematica, dove un test o un proof assistant danno un verdetto in millisecondi. Dove invece il verificatore è un esperimento di laboratorio o una dimostrazione che richiede anni, l'intersezione esiste lo stesso, ma campionarla in modo utile diventa lentissimo.
 
 ![Ipotesi 3]({{ "/assets/images/ipotesi-3.svg" | relative_url }})
 
