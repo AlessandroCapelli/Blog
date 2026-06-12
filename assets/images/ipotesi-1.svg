@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+  <style>
+    text { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+           paint-order: stroke; stroke: #ffffff; stroke-width: 4px; stroke-linejoin: round; }
+    .ink { fill: #131720; } .muted { fill: #5c6470; }
+    .acc { fill: #2b3ff3; } .acc-s { stroke: #2b3ff3; }
+    .hot { fill: #ff4d2e; } .hot-s { stroke: #ff4d2e; }
+    .u-f { fill: #5c6470; fill-opacity: 0.13; } .u-s { stroke: #5c6470; }
+    .s-f { fill: #2b3ff3; fill-opacity: 0.05; }
+    .m-f { fill: #ff4d2e; fill-opacity: 0.07; }
+    .mix { fill: #8a4ec9; }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #e9ecf2; } .muted { fill: #8a93a3; } text { stroke: #11151f; }
+      .acc { fill: #7d8cff; } .acc-s { stroke: #7d8cff; }
+      .hot { fill: #ff7a5c; } .hot-s { stroke: #ff7a5c; }
+      .u-f { fill: #8a93a3; fill-opacity: 0.16; } .u-s { stroke: #8a93a3; }
+      .s-f { fill: #7d8cff; fill-opacity: 0.07; }
+      .m-f { fill: #ff7a5c; fill-opacity: 0.09; }
+      .mix { fill: #b48aff; }
+    }
+  </style>
+
+  <text x="430" y="34" text-anchor="middle" font-size="24" font-weight="600" class="ink">Ipotesi 1: M ⊂ S</text>
+  <text x="430" y="56" text-anchor="middle" font-size="15.5" class="muted">il modello è un sottoinsieme dello spazio ideale</text>
+
+  <!-- S -->
+  <ellipse cx="430" cy="290" rx="345" ry="185" class="s-f acc-s" stroke-width="2.4"/>
+  <text x="96" y="138" font-size="17" class="acc">S: soluzioni "reali"</text>
+
+  <!-- M -->
+  <ellipse cx="505" cy="295" rx="195" ry="120" class="m-f hot-s" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <text x="520" y="150" text-anchor="middle" font-size="17" class="hot">M: funzione appresa</text>
+
+  <!-- U -->
+  <ellipse cx="315" cy="305" rx="155" ry="100" class="u-f u-s" stroke-width="2.2"/>
+  <text x="232" y="292" text-anchor="middle" font-size="17" font-weight="600" class="muted">U</text>
+  <text x="232" y="312" text-anchor="middle" font-size="14" class="muted">già scoperto</text>
+  <text x="232" y="329" text-anchor="middle" font-size="14" class="muted">dall'umanità</text>
+
+  <!-- campioni in U -->
+  <circle cx="245" cy="352" r="4" class="muted"/>
+  <circle cx="285" cy="262" r="4" class="muted"/>
+  <circle cx="305" cy="372" r="4" class="muted"/>
+
+  <!-- M ∩ U -->
+  <circle cx="398" cy="292" r="4" class="mix"/>
+  <circle cx="420" cy="330" r="4" class="mix"/>
+  <circle cx="410" cy="262" r="4" class="mix"/>
+  <text x="405" y="372" text-anchor="middle" font-size="14" class="mix">M ∩ U: "rimescolare il noto"</text>
+
+  <!-- M ∩ S \ U: invenzione -->
+  <circle cx="545" cy="262" r="5.5" class="hot"/>
+  <circle cx="565" cy="335" r="5.5" class="hot"/>
+  <circle cx="600" cy="298" r="5.5" class="hot"/>
+  <text x="575" y="232" text-anchor="middle" font-size="16" font-weight="600" class="hot">M ∩ S ∖ U: invenzione possibile</text>
+
+  <!-- zone di S mai raggiunte -->
+  <circle cx="250" cy="448" r="4" class="acc" opacity="0.55"/>
+  <circle cx="612" cy="450" r="4" class="acc" opacity="0.55"/>
+  <text x="431" y="452" text-anchor="middle" font-size="14" class="acc" opacity="0.85">valido, non raggiunto da nessuno</text>
+
+  <text x="430" y="500" text-anchor="middle" font-size="15.5" class="muted">Anche nello scenario pessimista, M ∩ S ∖ U esiste: punti validi, mai scoperti, campionabili.</text>
+</svg>

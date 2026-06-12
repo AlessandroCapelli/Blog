@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+  <style>
+    text { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+           paint-order: stroke; stroke: #ffffff; stroke-width: 4px; stroke-linejoin: round; }
+    .ink { fill: #131720; } .muted { fill: #5c6470; }
+    .acc { fill: #2b3ff3; } .acc-s { stroke: #2b3ff3; }
+    .hot { fill: #ff4d2e; } .hot-s { stroke: #ff4d2e; }
+    .u-f { fill: #5c6470; fill-opacity: 0.13; } .u-s { stroke: #5c6470; }
+    .s-f { fill: #2b3ff3; fill-opacity: 0.05; }
+    .m-f { fill: #ff4d2e; fill-opacity: 0.07; }
+    .mix { fill: #8a4ec9; }
+    .gho { fill: #9aa1ab; }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #e9ecf2; } .muted { fill: #8a93a3; } text { stroke: #11151f; }
+      .acc { fill: #7d8cff; } .acc-s { stroke: #7d8cff; }
+      .hot { fill: #ff7a5c; } .hot-s { stroke: #ff7a5c; }
+      .u-f { fill: #8a93a3; fill-opacity: 0.16; } .u-s { stroke: #8a93a3; }
+      .s-f { fill: #7d8cff; fill-opacity: 0.07; }
+      .m-f { fill: #ff7a5c; fill-opacity: 0.09; }
+      .mix { fill: #b48aff; }
+      .gho { fill: #6a7282; }
+    }
+  </style>
+
+  <text x="430" y="34" text-anchor="middle" font-size="24" font-weight="600" class="ink">Ipotesi 3: M ⊄ S</text>
+  <text x="430" y="56" text-anchor="middle" font-size="15.5" class="muted">il modello esce dallo spazio ideale: allucina, ma può ancora inventare</text>
+
+  <!-- S -->
+  <ellipse cx="345" cy="295" rx="295" ry="172" class="s-f acc-s" stroke-width="2.4"/>
+  <text x="120" y="150" font-size="17" class="acc">S: soluzioni "reali"</text>
+
+  <!-- M che esce -->
+  <ellipse cx="565" cy="295" rx="250" ry="142" class="m-f hot-s" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <text x="638" y="166" font-size="17" class="hot">M: funzione appresa</text>
+
+  <!-- U -->
+  <ellipse cx="295" cy="318" rx="128" ry="82" class="u-f u-s" stroke-width="2.2"/>
+  <text x="245" y="314" text-anchor="middle" font-size="17" font-weight="600" class="muted">U</text>
+  <text x="245" y="334" text-anchor="middle" font-size="14" class="muted">già scoperto</text>
+
+  <circle cx="225" cy="298" r="4" class="muted"/>
+  <circle cx="262" cy="362" r="4" class="muted"/>
+
+  <!-- M ∩ U -->
+  <circle cx="385" cy="318" r="4" class="mix"/>
+  <circle cx="398" cy="348" r="4" class="mix"/>
+
+  <!-- M ∩ S \ U: invenzione -->
+  <circle cx="495" cy="278" r="5.5" class="hot"/>
+  <circle cx="525" cy="335" r="5.5" class="hot"/>
+  <circle cx="468" cy="372" r="5.5" class="hot"/>
+  <text x="497" y="250" text-anchor="middle" font-size="16" font-weight="600" class="hot">M ∩ S ∖ U: invenzione (da verificare)</text>
+
+  <!-- allucinazioni: M \ S -->
+  <circle cx="712" cy="262" r="5" class="gho"/>
+  <circle cx="688" cy="318" r="5" class="gho"/>
+  <circle cx="752" cy="300" r="5" class="gho"/>
+  <text x="722" y="372" text-anchor="middle" font-size="15.5" font-weight="600" class="gho">M ∖ S: allucinazioni</text>
+  <text x="722" y="392" text-anchor="middle" font-size="13.5" class="gho">sembrano soluzioni, non lo sono</text>
+
+  <text x="430" y="500" text-anchor="middle" font-size="15.5" class="muted">Scenario realista: il modello allucina, esiste M ∩ S ∖ U. Serve un verificatore.</text>
+</svg>

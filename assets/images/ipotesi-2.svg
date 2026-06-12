@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520">
+  <style>
+    text { font-family: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+           paint-order: stroke; stroke: #ffffff; stroke-width: 4px; stroke-linejoin: round; }
+    .ink { fill: #131720; } .muted { fill: #5c6470; }
+    .acc { fill: #2b3ff3; } .acc-s { stroke: #2b3ff3; }
+    .hot { fill: #ff4d2e; } .hot-s { stroke: #ff4d2e; }
+    .u-f { fill: #5c6470; fill-opacity: 0.13; } .u-s { stroke: #5c6470; }
+    .s-f { fill: #2b3ff3; fill-opacity: 0.05; }
+    .m-f { fill: #ff4d2e; fill-opacity: 0.06; }
+    @media (prefers-color-scheme: dark) {
+      .ink { fill: #e9ecf2; } .muted { fill: #8a93a3; } text { stroke: #11151f; }
+      .acc { fill: #7d8cff; } .acc-s { stroke: #7d8cff; }
+      .hot { fill: #ff7a5c; } .hot-s { stroke: #ff7a5c; }
+      .u-f { fill: #8a93a3; fill-opacity: 0.16; } .u-s { stroke: #8a93a3; }
+      .s-f { fill: #7d8cff; fill-opacity: 0.07; }
+      .m-f { fill: #ff7a5c; fill-opacity: 0.08; }
+    }
+  </style>
+
+  <text x="430" y="34" text-anchor="middle" font-size="24" font-weight="600" class="ink">Ipotesi 2: M ≈ S</text>
+  <text x="430" y="56" text-anchor="middle" font-size="15.5" class="muted">il modello copre quasi tutto lo spazio ideale</text>
+
+  <!-- S -->
+  <ellipse cx="430" cy="290" rx="345" ry="185" class="s-f acc-s" stroke-width="2.4"/>
+  <text x="108" y="130" font-size="17" class="acc">S: soluzioni "reali"</text>
+
+  <!-- M quasi coincidente -->
+  <ellipse cx="430" cy="293" rx="328" ry="172" class="m-f hot-s" stroke-width="2.4" stroke-dasharray="7 5"/>
+  <text x="665" y="250" font-size="17" class="hot">M ≈ S</text>
+
+  <!-- invenzione: header in alto -->
+  <text x="455" y="172" text-anchor="middle" font-size="16" font-weight="600" class="hot">M ∩ S ∖ U: quasi tutto è invenzione potenziale</text>
+
+  <!-- U piccolo -->
+  <ellipse cx="330" cy="315" rx="118" ry="75" class="u-f u-s" stroke-width="2.2"/>
+  <text x="330" y="312" text-anchor="middle" font-size="17" font-weight="600" class="muted">U</text>
+  <text x="330" y="332" text-anchor="middle" font-size="14" class="muted">già scoperto</text>
+
+  <circle cx="290" cy="295" r="4" class="muted"/>
+  <circle cx="365" cy="345" r="4" class="muted"/>
+
+  <!-- invenzione ovunque -->
+  <circle cx="560" cy="245" r="5.5" class="hot"/>
+  <circle cx="630" cy="335" r="5.5" class="hot"/>
+  <circle cx="495" cy="210" r="5.5" class="hot"/>
+  <circle cx="235" cy="225" r="5.5" class="hot"/>
+  <circle cx="535" cy="390" r="5.5" class="hot"/>
+  <circle cx="160" cy="305" r="5.5" class="hot"/>
+
+  <text x="430" y="500" text-anchor="middle" font-size="15.5" class="muted">Scenario ottimista e probabilmente irrealistico: U è minuscolo rispetto a S.</text>
+</svg>
